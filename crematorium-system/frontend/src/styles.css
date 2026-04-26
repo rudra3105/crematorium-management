@@ -1,0 +1,25 @@
+* { box-sizing: border-box; font-family: Arial, sans-serif; }
+body { margin: 0; background: #f3f5f7; }
+.container { max-width: 1200px; margin: 0 auto; padding: 1rem; }
+header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; }
+nav a { margin-left: 1rem; text-decoration: none; color: #145ea8; font-weight: 600; }
+.card { background: #fff; border-radius: 8px; padding: 1rem; border: 1px solid #d9dee5; }
+.grid { display: grid; gap: 1rem; }
+.two-col { grid-template-columns: 1fr 1fr; }
+.three-col { grid-template-columns: repeat(3, 1fr); }
+.full-width { grid-column: 1 / -1; }
+.stack { display: flex; flex-direction: column; gap: 0.6rem; }
+.inline { display: flex; gap: 0.5rem; align-items: center; }
+.between { justify-content: space-between; }
+.narrow { max-width: 360px; margin: 0 auto; }
+input, select, textarea, button { padding: 0.55rem; border: 1px solid #b8c2cf; border-radius: 6px; }
+button { background: #145ea8; color: #fff; border: none; cursor: pointer; }
+button:hover { opacity: 0.9; }
+table { width: 100%; border-collapse: collapse; margin-top: 0.5rem; }
+th, td { border: 1px solid #e3e7ef; padding: 0.5rem; text-align: left; vertical-align: top; }
+.success { margin-top: 1rem; background: #e9f8ee; border: 1px solid #b0e3be; padding: 0.75rem; border-radius: 8px; }
+.calendar { display: grid; grid-template-columns: repeat(7, minmax(80px, 1fr)); gap: 0.4rem; margin-top: 0.5rem; }
+.calendar button { display: flex; flex-direction: column; gap: 0.2rem; background: #fff; color: #111; border: 1px solid #cad4e1; }
+ul { padding-left: 1rem; }
+li { display: flex; justify-content: space-between; margin: 0.35rem 0; gap: 0.5rem; }
+@media (max-width: 900px) { .two-col, .three-col { grid-template-columns: 1fr; } .calendar { grid-template-columns: repeat(4, 1fr); } }
